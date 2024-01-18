@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 230, 167, 86;
+  --bs-primary-rgb: #3C3C3C;
   --bs-secondary-rgb: 47, 23, 15;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -2863,19 +2863,19 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #2F170F;
-  --bs-btn-border-color: #2F170F;
+  --bs-btn-bg: #141414;
+  --bs-btn-border-color: #141414;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #28140d;
-  --bs-btn-hover-border-color: #26120c;
+  --bs-btn-hover-bg: #3C3C3C;
+  --bs-btn-hover-border-color: #3C3C3C;
   --bs-btn-focus-shadow-rgb: 78, 58, 51;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #26120c;
-  --bs-btn-active-border-color: #23110b;
+  --bs-btn-active-bg: #3C3C3C;
+  --bs-btn-active-border-color: #3C3C3C;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #2F170F;
-  --bs-btn-disabled-border-color: #2F170F;
+  --bs-btn-disabled-bg: #3C3C3C;
+  --bs-btn-disabled-border-color: #3C3C3C;
 }
 
 .btn-success {
@@ -10831,7 +10831,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: #e3e4e5;
 }
 
 p {
@@ -10880,7 +10880,7 @@ p {
 }
 
 .bg-faded {
-  background-color: #f6e1c5;
+  background-color: #fff;
 }
 
 .btn-xl {
@@ -10893,9 +10893,18 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-image: url("../assets/img/Banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  height: 45vh;
+  display: flex;
+  align-items: center;
 }
+
+
 #mainNav .navbar-brand {
   color: #e6a756;
 }
@@ -10937,7 +10946,7 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(230, 167, 86, 0.9);
+  background-color: #e3e4e5;
 }
 .cta .cta-inner {
   position: relative;
@@ -10957,7 +10966,7 @@ p {
 }
 
 .footer {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: #F2F2F2;
 }
 
 .intro {
@@ -11031,7 +11040,7 @@ p {
 }
 
 section#contact form#contactForm .form-group {
-  margin-bottom: 1.5rem;
+  margin: 1.5rem;
 }
 section#contact form#contactForm .form-group input,
 section#contact form#contactForm .form-group textarea {
@@ -11070,12 +11079,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   list-style: none;
 }
 
-iframe {
-  width: 100%;
-  height: 100vh; /* Esto establece la altura al 100% de la altura visible del dispositivo */
-  border: 0;
-}
-
 .faq-list {
   list-style: none;
   padding: 0;
@@ -11092,22 +11095,6 @@ iframe {
 .answer {
   display: none;
   padding: 10px;
-}
-
-#map{
-  border: 2px solid #333; /* Establece el ancho, estilo y color del borde */
-  padding: 20px; /* Añade espacio alrededor del contenido dentro del borde */
-  box-sizing: border-box; /* Incluye el padding en el ancho total del elemento */
-  max-width: 800px; /* Establece el ancho máximo para la sección */
-  margin: 20px auto; /* Centra la sección en la página */
-  width: 100%;
-  overflow: hidden;
-}
-
-iframe {
-  width: 100%;
-  height: 100vh;
-  border: none; /* Elimina el borde predeterminado del iframe */
 }
 
 .logo{

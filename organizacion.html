@@ -22,20 +22,20 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Inicio</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="organizacion.html">Organización</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="contacto.html">Contacto</a></li>
-                        <!-- <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="preguntas-frecuentes.html">Preguntas frecuentes</a></li> -->
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase text-light" href="index.html">Inicio</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase text-light" href="organizacion.html">Organización</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase text-light" href="contacto.html">Contacto</a></li>
+                        <!-- <li class="nav-item px-lg-4"><a class="nav-link text-uppercase text-light" href="preguntas-frecuentes.html">Preguntas frecuentes</a></li> -->
                     </ul>
                 </div>
             </div>
         </nav>
         <section class="page-section about-heading">
             <div class="container">
-                <div class="d-flex">
+                <div class="d-flex flex-column flex-lg-row align-items-center">
                     <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/personal1.png" alt="..." />
                     <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/personal2.png" alt="..." />
-                </div>
+                </div>                              
                 <div class="about-heading-content">
                     <div class="row">
                         <div class="col-xl-9 col-lg-10 mx-auto">
@@ -71,10 +71,11 @@
                 </div>
             </div>
         </section>
-        <section class="page-section">
+        <div class="row">
+        <section class="page-section col">
             <div class="container">
                 <div class="product-item">
-                    <div class="product-item-title d-flex">
+                    <div class="product-item-description d-flex">
                         <div class="bg-faded p-5 d-flex ms-auto rounded">
                             <h2 class="section-heading mb-0">
                                 <span class="section-heading-upper">MERCEDES-BENZ</span>
@@ -83,7 +84,7 @@
                         </div>
                     </div>
                     <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/camiones/flota1.webp" alt="..." />
-                    <div class="product-item-description d-flex me-auto">
+                    <div class="product-item-description d-flex ms-auto">
                         <div class="bg-faded p-5 rounded"><p class="mb-0">
                             <ul class="lista">
                                 <li><b>Largo:</b> 5.40</li>
@@ -98,11 +99,11 @@
                 </div>
             </div>
         </section>
-        <section class="page-section">
+        <section class="page-section col">
             <div class="container">
                 <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex me-auto rounded">
+                    <div class="product-item-description d-flex">
+                        <div class="bg-faded p-5 d-flex ms-auto rounded">
                             <h2 class="section-heading mb-0">
                                 <span class="section-heading-upper">MERCEDES-BENZ</span>
                                 <span class="section-heading-lower">ATRON 1624</span>
@@ -123,10 +124,11 @@
                 </div>
             </div>
         </section>
+    </div>
         <section class="page-section">
             <div class="container">
                 <div class="product-item">
-                    <div class="product-item-title d-flex">
+                    <div class="product-item-description d-flex">
                         <div class="bg-faded p-5 d-flex ms-auto rounded">
                             <h2 class="section-heading mb-0">
                                 <span class="section-heading-upper">MERCEDES-BENZ</span>
@@ -135,7 +137,7 @@
                         </div>
                     </div>
                     <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/camiones/flota3.webp" alt="..." />
-                    <div class="product-item-description d-flex me-auto">
+                    <div class="product-item-description d-flex ms-auto">
                         <div class="bg-faded p-5 rounded"><p class="mb-0">
                             <ul class="lista">
                                 <li><b>Largo:</b> 6.40</li>
@@ -166,15 +168,52 @@
                                 <img class="product-item-img mx-2 rounded img-fluid mb-3 mb-lg-0" src="assets/img/vtv2.png" alt="..." style="width: 150px;">
                             </div>
                             <div class="intro-button mx-auto">
-                                <a class="btn btn-primary btn-xl" href="javascript:void(0);" onclick="mostrarDetalles()">Detalles de Vehículos y Habilitaciones</a>
+                                <a class="btn btn-secondary btn-xl" href="javascript:void(0);" onclick="mostrarDetalles()">Detalles de Vehículos y Habilitaciones</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="footer text-faded text-center py-5">
-            <div >&copy; Copyright 2023 by <a href="https://www.codeandmate.com/" target="blank" class="text-decoration-none "><b>Code & Mate</b></a></div>
+        <footer class="footer text-center py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="section-heading mb-5">
+                            <span class="section-heading-lower">Contacto</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Estamos ubicados en</span>
+                        <span class="section-heading-lower">Oliden 4607, Villa Lugano</span>
+                    </h2>
+                    <div class="col-md-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1640.5062893791817!2d-58.47035499999999!3d-34.679632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc953bccfc151%3A0xde2b1af5fffd664b!2sOliden%204607%2C%20C1439FOK%20Villa%20Lugano%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1705590015042!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mb-0">
+                            <em><u>Horario de atención</u></em>
+                            <br>
+                            <b>Lunes a Viernes:</b> 8:00 - 18:00
+                            <br />
+                            <b>Nextel ID:</b> 656*389
+                            <br>
+                            <b>Whatsapp:</b> 11-2771-7970
+                            <br>
+                            <b>Email:</b> Sycintlogistics@hotmail.com
+                        </p>
+                        <br>
+                        <img class="logo" src="./assets/img/Logo.jpg" alt="Logo">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div>&copy; Copyright 2023 by <a href="https://www.codeandmate.com/" target="blank" class="text-decoration-none text-dark"><b>Code & Mate</b></a></div>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

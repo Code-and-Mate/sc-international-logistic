@@ -19,7 +19,7 @@ function mostrarDetalles() {
                         <li>Nuestros conductores mantienen exámenes psicofísicos al día, asegurando su aptitud para el manejo seguro de las cargas.</li>\
                     </ul>\
                     <div class='intro-button mx-auto'>\
-                        <a class='btn btn-primary btn-xl' href='javascript:void(0);' onclick='restaurarTexto()'>Volver al Texto Anterior</a>\
+                        <a class='btn btn-secondary btn-xl' href='javascript:void(0);' onclick='restaurarTexto()'>Volver al Texto Anterior</a>\
                     </div>";
 
     $('.text-container .intro-text').html(nuevoTexto);
@@ -33,7 +33,7 @@ function restaurarTexto() {
                             <img class='product-item-img mx-2 rounded img-fluid mb-3 mb-lg-0' src='assets/img/vtv2.png' alt='...' style='width: 150px;'>\
                         </div>\
                         <div class='intro-button mx-auto'>\
-                            <a class='btn btn-primary btn-xl' href='javascript:void(0);' onclick='mostrarDetalles()'>Detalles de Vehículos y Habilitaciones</a>\
+                            <a class='btn btn-secondary btn-xl' href='javascript:void(0);' onclick='mostrarDetalles()'>Detalles de Vehículos y Habilitaciones</a>\
                         </div>";
 
     $('.text-container .intro-text').html(textoAnterior);
