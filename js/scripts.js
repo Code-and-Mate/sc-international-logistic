@@ -43,3 +43,28 @@ function toggleAnswer(item) {
     var answer = item.querySelector('.answer');
     answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
 }
+
+function handleAnimation(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('invisible');
+            entry.target.classList.add('animated', 'fadeIn');
+
+            // Agrega o quita las clases según tus necesidades
+            entry.target.classList.add('animate__animated', 'animate__fadeIn');
+
+            observer.unobserve(entry.target);
+        }
+    });
+}
+
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3
+};
+
+const observer = new IntersectionObserver(handleAnimation, observerOptions);
+
+const animateSection = document.getElementById('tuSeccion');
+observer.observe(animateSection);
