@@ -314,6 +314,11 @@ table {
   border-collapse: collapse;
 }
 
+.collapse{
+  background-color: #0E0E0E;
+  border-radius: 2%;
+}
+
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -3815,6 +3820,7 @@ textarea.form-control-lg {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  
 }
 
 .navbar-toggler {
@@ -3878,6 +3884,8 @@ textarea.form-control-lg {
   .navbar-expand-sm .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
+    background-color: #0E0E0E;
+    border-radius: 2%;
   }
   .navbar-expand-sm .navbar-toggler {
     display: none;
@@ -4353,7 +4361,7 @@ textarea.form-control-lg {
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
   --bs-accordion-active-color: #cf964d;
-  --bs-accordion-active-bg: #fdf6ee;
+  --bs-accordion-active-bg: #787878;
 }
 
 .accordion-button {
@@ -10893,13 +10901,14 @@ p {
 }
 
 #mainNav {
-  background-image: url("../assets/img/Banner.png");
+  /* background-image: url("../assets/img/Banner.png"); */
+  background-color: #0E0E0E;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-  height: 45vh;
+  height: 19vh;
   display: flex;
   align-items: center;
 }
@@ -11099,4 +11108,31 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .logo{
   width: 40vh;
+}
+
+#content-container {
+  padding-top: 100px; /* Ajusta esta altura según la altura de tu navbar */
+}
+
+.ampersand{
+  color: #92A333;
+}
+
+h4{
+  margin-left: 1rem;
+}
+
+.btn-social-wpp {
+  height: 4rem;
+  width: 4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: green;
+  margin: 10px;
 }
