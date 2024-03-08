@@ -44,7 +44,7 @@ function toggleAnswer(item) {
     answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
 }
 
-function handleAnimation(entries, observer) {
+/* function handleAnimation(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.remove('invisible');
@@ -56,7 +56,7 @@ function handleAnimation(entries, observer) {
             observer.unobserve(entry.target);
         }
     });
-}
+} */
 
 const observerOptions = {
     root: null,
@@ -65,6 +65,3 @@ const observerOptions = {
 };
 
 const observer = new IntersectionObserver(handleAnimation, observerOptions);
-
-const animateSection = document.getElementById('tuSeccion');
-observer.observe(animateSection);
